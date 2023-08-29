@@ -1,0 +1,153 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+body {
+  background-color: #dae5f2;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%; /* root font 10px*/
+}
+
+.mainBox {
+  width: 70vw;
+  background-color: #fff;
+  height: 70vh;
+  margin: 13.5rem auto;
+  display: flex;
+  justify-content: space-between;
+}
+.mainBox__sideBar {
+  background-image: linear-gradient(to right, #335af5, #e1b8f2);
+  width: 30%;
+  margin: 2rem;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+}
+.mainBox__sideBar--miniBox {
+  display: flex;
+  color: #fff;
+  font-weight: 600;
+  width: 60%;
+  margin: 5rem 0 3rem 5rem;
+}
+.miniBox--textOne {
+  color: #000;
+  font-size: 2rem;
+  width: 4rem;
+  height: 4rem;
+  background: #c6daeb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.miniBox--textTwo {
+  padding-top: 0.4rem;
+  margin-left: 4rem;
+}
+.miniBox--textTwo > span {
+  font-size: 1.2rem;
+  opacity: 0.8;
+}
+.mainBox__Login-form {
+  width: 70%;
+  margin: 7rem 5rem 4rem;
+  padding-left: 6rem;
+  position: relative;
+}
+.mainBox__login-form__title {
+  font-size: 5rem;
+  color: #32425e;
+}
+.mainBox__Login-form p {
+  font-size: 2rem;
+  opacity: 0.6;
+}
+.mainBox__Login-form__register-field {
+  margin: 3rem 0 6rem;
+}
+.mainBox__Login-form__register-field label {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.input-field {
+  margin-bottom: 2rem;
+}
+.input-field input {
+  width: 70%;
+  padding: 1rem;
+  outline: none;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(22, 21, 21, 0.2);
+  opacity: 0.8;
+}
+.btn {
+  position: absolute;
+  right: 10%;
+  bottom: 0;
+  text-decoration: none;
+  font-size: 2.5rem;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  font-weight: 700;
+  background: #eac5eb;
+  transition: all 0.2s;
+}
+.btn:hover {
+  transform: translateY(-0.5rem);
+}
+.btn:active {
+  transform: translateY(-0.3rem);
+}
+
+@media (max-width:1440px){
+  html{
+    font-size: 45.5%;
+  }
+}
+@media(max-width:1024px){
+  html{
+    font-size: 30.5%;
+  }
+}
+@media(max-width:768px){
+  html{
+    font-size: 32.5%;
+  }
+  .mainBox{
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    height: 90vh;
+    margin: 3rem auto 0;
+    
+  }
+  .mainBox__sideBar{
+   margin: 0;
+   padding-left: 3rem;
+   width: 100%;
+  }
+  .mainBox__Login-form{
+   padding-left: 3rem;
+    height: 100%;
+    position: relative;
+  }
+  .mainBox__Login-form p{
+    margin-bottom: 6rem;
+  }
+  .input-field {
+    margin-bottom: 3rem;
+  }
+  .btn{
+    position: absolute;
+    left: 9%;
+    text-align: center;
+  }
+}
+
+
+
+
